@@ -1,0 +1,1 @@
+Esta es una web dedicada a la venta de productos tecnologicos e informaticos. Sin fines comerciales.
