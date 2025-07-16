@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Tecno Cris - Ofertas</title>
+</head>
+    <header>
+            <img class="logo" src="./Index/Imagenes/logo tecno cris.png" alt="logo de tecno cris" width="8%">
+            <h1 class="parte1">Tecno Cris - Tienda de Informatica</h1>
+        <div class="navbar">
+            <nav>
+               <ul>
+                <li><a href="./productos.html"> <strong>Productos</strong></a></li>
+                <li><a href="./ofertas.html"> <strong>Ofertas</strong></a></li>
+                <li><a href="./ubicacion.html"> <strong>Ubicacion</strong></a></li>
+                <li><a href="./formulario.html"> <strong>Formulario</strong></a></li>
+                <li><a href="./Reseñas.html"> <strong>Reseñas</strong></a></li>
+                <li><a href="./Clientes Satisfechos.html"> <strong>Clientes Satisfechos</strong></a></li>
+                <li><a aria-label='Carrito' href="./compra.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="carrito-contador" class="carrito-contador" style="display:none;">0</span>
+                    </a>
+                </li>
+               </ul>
+            </nav>    
+        </div>
+    </header>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <p class="text-right">Total $: <span id="total"></span>;</p>
+                <button id="boton-pagar" class="btn btn-primary mt-3">Pagar</button>
+                <button id="boton-vaciar" class="btn btn-danger mt-3">Vaciar</button>
+            </aside>
+        </div>
+    </div>
+    <script src="carritodinamico.js"></script>
+</body>
+</html>
